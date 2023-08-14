@@ -24,10 +24,10 @@ interface SquircleViewProps extends ViewProps {
 }
 
 function SquircleView({
-  squircleParams,
-  children,
-  ...rest
-}: PropsWithChildren<SquircleViewProps>) {
+                        squircleParams,
+                        children,
+                        ...rest
+                      }: PropsWithChildren<SquircleViewProps>) {
   return (
     <View {...rest}>
       <SquircleBackground {...squircleParams} />
@@ -49,6 +49,7 @@ function SquircleBackground({
   fillGradientColors,
   strokeGradientColors,
 }: SquircleParams) {
+
   const squircleId = useId()
 
   return (
